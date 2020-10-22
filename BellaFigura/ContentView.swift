@@ -29,7 +29,7 @@ struct ContentView: View {
                 Text("Saved")
             }
             
-        }
+        }.accentColor(Color(#colorLiteral(red: 0.9215686275, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
     }
 }
 
