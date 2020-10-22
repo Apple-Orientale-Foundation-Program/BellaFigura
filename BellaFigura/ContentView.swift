@@ -9,8 +9,27 @@ import SwiftUI
 // inserito un commento
 struct ContentView: View {
     var body: some View {
-        Text("Hello Pinched Fingers!")
-            .padding()
+        TabView{
+            
+            QuizMenuView()
+            .tabItem{
+                Image(systemName: "list.bullet")
+                Text("Quiz Menu")
+            }
+            
+            CommunityView()
+            .tabItem{
+                Image(systemName: "person.3.fill")
+                Text("Community")
+            }
+            
+            SavedView()
+            .tabItem{
+                Image(systemName: "bookmark.fill")
+                Text("Saved")
+            }
+            
+        }
     }
 }
 
