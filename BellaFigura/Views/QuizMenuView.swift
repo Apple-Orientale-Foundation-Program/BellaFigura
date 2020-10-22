@@ -9,7 +9,23 @@ import SwiftUI
 
 struct QuizMenuView: View {
     var body: some View {
-        Text("Quiz Menu")
+        NavigationView{
+            
+            Form {
+                
+            }
+            .navigationBarTitle("Quiz Menu", displayMode: .inline)
+            .navigationBarItems(trailing:
+                Button(
+                    action: {/*Inserire funzione Spiegazioni*/},
+                    label: {
+                        Image(
+                            systemName: "info.circle"
+                        ).accentColor(Color(#colorLiteral(red: 0.9215686275, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
+                    }
+                )
+            )
+        }
     }
 }
 
