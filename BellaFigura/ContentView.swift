@@ -9,8 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello Pinched Fingers!")
-            .padding()
+        TabView {
+            QuizMenuView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Quiz Menu")
+                }
+            CommunityView()
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Community")
+                }
+            SavedView()
+                .tabItem {
+                    Image(systemName: "bookmark.fill")
+                    Text("Saved")
+                }
+        }
+        .accentColor(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
     }
 }
 
@@ -19,3 +35,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
