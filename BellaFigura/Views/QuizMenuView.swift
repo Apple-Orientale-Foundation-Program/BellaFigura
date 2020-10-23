@@ -14,6 +14,7 @@ struct QuizMenuView: View {
             Form {
                 
             }
+            
             .navigationBarTitle("Quiz Menu", displayMode: .inline)
             .navigationBarItems(trailing:
                 Button(
