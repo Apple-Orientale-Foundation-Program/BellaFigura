@@ -17,6 +17,7 @@ struct infoView: View {
                 
                 //IMAGE
                 Image("QM")
+                    .padding(.top, -150)
                 
                 
                 
@@ -50,9 +51,9 @@ struct infoView: View {
                             .fill(Color.white)
                             .frame(width:20, height:20, alignment: .center)
                             .cornerRadius(5)
-                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                            .border(Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1)
                         Text("Don't show again")
-                            .accentColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+                            .accentColor(.black)
                     }
                 }
                 
