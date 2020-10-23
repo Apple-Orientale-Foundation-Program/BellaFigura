@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-
-struct EmailView: View {
+struct EmailModalView: View {
     @Binding var showModal: Bool
     
     var body: some View {
@@ -36,8 +35,8 @@ struct EmailView: View {
         }
     }
 }
-struct EmailView_Previews: PreviewProvider {
+struct EmailModalView_Previews: PreviewProvider {
     static var previews: some View {
-        EmailView(showModal: .constant(true))
+        EmailModalView(showModal: .constant(true))
     }
 }

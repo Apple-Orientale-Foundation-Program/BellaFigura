@@ -41,7 +41,8 @@ We will add your experience to our collection!
                                             .fill(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
                                             .frame(width: 165, height: 50)
                             )
-                    }
+                    }.sheet(isPresented: $showEmailModal)
+                        {EmailModalView(showModal: self.$showEmailModal)}
                 }
             }
             .navigationBarTitle(("Community"), displayMode: .inline)
