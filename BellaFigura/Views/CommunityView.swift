@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CommunityView: View {
+    @State var showEmailModal: Bool = false
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -29,7 +31,8 @@ We will add your experience to our collection!
                                         .strokeBorder(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)), lineWidth: 4)
                                         .background(Color(.white))
                         )
-                    Button(action: {}, label: {
+                    Button(action: {self.showEmailModal.toggle()
+                    }) {
                         Text("E-mail")
                             .font(.title3)
                             .padding()
@@ -38,9 +41,7 @@ We will add your experience to our collection!
                                             .fill(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
                                             .frame(width: 165, height: 50)
                             )
-                        
                     }
-                    )
                 }
             }
             .navigationBarTitle(("Community"), displayMode: .inline)

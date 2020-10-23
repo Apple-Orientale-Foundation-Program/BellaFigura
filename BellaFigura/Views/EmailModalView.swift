@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EmailView: View {
     @Binding var showModal: Bool
+    
     var body: some View {
         NavigationView {
             List {
