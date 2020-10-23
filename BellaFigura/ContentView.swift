@@ -26,7 +26,7 @@ struct ContentView: View {
             SavedView()
             .tabItem{
                 Image(systemName: "bookmark.fill")
-                Text("Saved")
+                Text("Favorites")
             }
             
         }.accentColor(Color(#colorLiteral(red: 0.9215686275, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
