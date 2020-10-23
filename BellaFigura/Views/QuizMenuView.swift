@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuizMenuView: View {
     var body: some View {
-        NavigationView{
+        
             VStack {
             Image("businessMan")
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
@@ -32,7 +32,7 @@ struct QuizMenuView: View {
                     }
                 )
             )
-        }
+        
     }
 }
 
