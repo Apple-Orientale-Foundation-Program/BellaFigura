@@ -1,24 +1,24 @@
 //
-//  EndQuizBellaFiguraView.swift
+//  QuizEndBruttaFiguraView.swift
 //  BellaFigura
 //
-//  Created by Stefania Caiazza on 23/10/2020.
+//  Created by Arianna Costagliola on 23/10/2020.
 //
 
 import SwiftUI
 
-struct EndQuizBellaFiguraView: View {
+struct QuizEndBruttaFiguraView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Image("thumbsUp")
+                Image("Thumbs up")
                 VStack{
-                    Text("You made a great impression")
+                    Text("You made a bad impression")
                         .fontWeight(.semibold)
                         .italic()
                         .foregroundColor(.white)
                         .shadow(radius: 4)
-                    Text("Bella Figura!")
+                    Text("Brutta Figura!")
                         .fontWeight(.semibold)
                         .font(.system(size: 50))
                         .foregroundColor(.white)
@@ -26,7 +26,7 @@ struct EndQuizBellaFiguraView: View {
                 }
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 13)
-                                .fill(Color(#colorLiteral(red: 0.6941176471, green: 0.8823529412, blue: 0.2980392157, alpha: 1)))
+                                .fill(Color(#colorLiteral(red: 0.8745098039, green: 0.2470588235, blue: 0.2470588235, alpha: 1)))
                 )
                 Spacer()
                     .frame(height: 98)
@@ -58,8 +58,8 @@ struct EndQuizBellaFiguraView: View {
     }
 }
 
-struct EndQuizBellaFiguraView_Previews: PreviewProvider {
+struct QuizEndBruttaFiguraView_Previews: PreviewProvider {
     static var previews: some View {
-        EndQuizBellaFiguraView()
+        QuizEndBruttaFiguraView()
     }
 }
