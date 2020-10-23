@@ -12,7 +12,6 @@
 		7BE83BF3254038A500258F50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE83BF2254038A500258F50 /* ContentView.swift */; };
 		7BE83BF5254038A600258F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE83BF4254038A600258F50 /* Assets.xcassets */; };
 		7BE83BF8254038A600258F50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE83BF7254038A600258F50 /* Preview Assets.xcassets */; };
-		93F7323E25430E7500FF904E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7323D25430E7500FF904E /* SceneDelegate.swift */; };
 		C3315D362541D49D0044309B /* infoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3315D352541D49D0044309B /* infoView.swift */; };
 		F08EBBDE2541B7FD004B3591 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBBDD2541B7FD004B3591 /* CommunityView.swift */; };
 		F08EBBE12541B821004B3591 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBBE02541B821004B3591 /* SavedView.swift */; };
@@ -27,7 +26,6 @@
 		7BE83BF4254038A600258F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BE83BF7254038A600258F50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BE83BF9254038A600258F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93F7323D25430E7500FF904E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../Desktop/Challenge/MC3/yoga 4/yoga/SceneDelegate.swift"; sourceTree = "<group>"; };
 		C3315D352541D49D0044309B /* infoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoView.swift; sourceTree = "<group>"; };
 		F08EBBDD2541B7FD004B3591 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		F08EBBE02541B821004B3591 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			children = (
 				F08EBBE72541B872004B3591 /* Views */,
 				7BE83BF0254038A500258F50 /* BellaFiguraApp.swift */,
-				93F7323D25430E7500FF904E /* SceneDelegate.swift */,
 				7BE83BF2254038A500258F50 /* ContentView.swift */,
 				35EBF61A2543023500170745 /* QuizIntroductionView.swift */,
 				7BE83BF4254038A600258F50 /* Assets.xcassets */,
@@ -165,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3315D362541D49D0044309B /* infoView.swift in Sources */,
-				93F7323E25430E7500FF904E /* SceneDelegate.swift in Sources */,
 				F08EBBE12541B821004B3591 /* SavedView.swift in Sources */,
 				F08EBBE42541B83A004B3591 /* QuizMenuView.swift in Sources */,
 				7BE83BF3254038A500258F50 /* ContentView.swift in Sources */,

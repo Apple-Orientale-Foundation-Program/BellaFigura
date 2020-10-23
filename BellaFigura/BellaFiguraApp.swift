@@ -11,7 +11,7 @@ import SwiftUI
 struct BellaFiguraApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            infoView()
         }
     }
 }
