@@ -26,7 +26,7 @@ import SwiftUI
             // 5.
             .onAppear {
                 // 6.
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                     // 7.
                     withAnimation {
                         self.isActive = true
