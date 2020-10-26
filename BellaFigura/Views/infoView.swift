@@ -25,8 +25,16 @@ struct infoView: View {
                 
                 
                 //TEXT
-                Text("Making a \n\n 'Bella Figura'\n(great impression)\n\nis the key to creating social relationships and being able to interact as best as possible with the Italian community.\n\n Learn social norms with us\n so that you will not make\n a bad impression,\n “una Brutta Figura”!")
-                    .multilineTextAlignment(.center)
+                VStack {
+                Text("Making a \n")
+                Text("'Bella Figura'")
+                        .fontWeight(.bold)
+                    Text("(great impression)\n\nis the key to creating social relationships and being able to interact as best as possible with the Italian community.\n\n\n Learn social norms with us\n so that you will not make\n a bad impression,")
+                        .multilineTextAlignment(.center)
+                    Text("“una Brutta Figura”!")
+                        .fontWeight(.bold)
+                    
+                }
                     .padding(.all, 30.0)
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
