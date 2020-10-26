@@ -23,7 +23,7 @@ struct ContentView: View {
                 Text("Community")
             }
             
-            SavedView()
+            FavoritesView()
             .tabItem{
                 Image(systemName: "bookmark.fill")
                 Text("Favorites")
