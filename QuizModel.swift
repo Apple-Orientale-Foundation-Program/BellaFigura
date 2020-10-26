@@ -16,5 +16,14 @@ struct Quiz: Identifiable {
 }
 
 class Quizzes: ObservableObject {
+    @Published var listOfQuizElements: [Quiz]
     
+    init(listOfQuizElements: [Quiz]) {
+        self.listOfQuizElements = listOfQuizElements
+    }
 }
+
+let QuizElements = Quizzes (
+    listOfQuizElements:[
+    Quiz(quizImage: <#T##String#>, quizQuestion: <#T##String#>, quizAnswer1: <#T##String#>, quizAnswer2: <#T##String#>, quizAnswer3: <#T##String#>)
+    ])
