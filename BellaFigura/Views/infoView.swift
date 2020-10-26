@@ -49,7 +49,7 @@ struct infoView: View {
                         
                     }
                 }
-                .padding(.vertical, 20.0)
+                .padding(.vertical, 10.0)
                 
                 
                 //button start
