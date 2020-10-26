@@ -66,18 +66,21 @@ struct QuestionView: View {
     var questionText : String
     
     var body: some View {
-        Image(questionImage)
-            .padding(.bottom, -10.0)
-        ZStack {
-            RoundedRectangle(cornerRadius: 13)
-                .frame(height: 188.0)
-                .foregroundColor(.white)
-                .overlay(RoundedRectangle(cornerRadius: 13)
-                            .stroke(Color( .green), lineWidth: 3)
-                )
-            Text(questionText)
+        VStack {
+            Image(questionImage)
+                .padding(.bottom, -10.0)
+            ZStack {
+                RoundedRectangle(cornerRadius: 13)
+                    .frame(height: 188.0)
+                    .foregroundColor(.white)
+                    .overlay(RoundedRectangle(cornerRadius: 13)
+                                .stroke(Color( .green), lineWidth: 3)
+                    )
+                Text(questionText)
+            }
+            .padding([.leading, .bottom, .trailing])
         }
-        .padding([.leading, .bottom, .trailing])
+        
     }
     
 }
@@ -146,7 +149,7 @@ struct AnswerButton: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView()
+        QuestionView(questionImage: "universityMenu", questionText: "Prova??????????")
     }
     
 }
