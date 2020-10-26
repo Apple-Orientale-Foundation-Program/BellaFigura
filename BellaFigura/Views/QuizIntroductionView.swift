@@ -13,7 +13,7 @@ struct QuizIntroductionView: View {
         NavigationView {
             
         ZStack {
-        Image("sfondo")
+        Image("dressCodeBackground")
             VStack {
             Text("Dress Code")
                 .font(.largeTitle)
