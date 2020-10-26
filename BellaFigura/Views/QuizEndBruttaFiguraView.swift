@@ -34,10 +34,10 @@ struct QuizEndBruttaFiguraView: View {
                 
                 Button(action: {}, label: {
                     Text("Quiz Menu")
-                        .foregroundColor(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
+                        .foregroundColor(.black)
                         .font(.system(size:30))
                         .background(RoundedRectangle(cornerRadius: 13)
-                                        .stroke()
+                                        .stroke(lineWidth: 4)
                                         .fill(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
                                         .frame(width: 226, height: 51)
                         )
@@ -48,10 +48,10 @@ struct QuizEndBruttaFiguraView: View {
                 
                 Button(action: {}, label: {
                     Text("Try Again")
-                        .foregroundColor(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
+                        .foregroundColor(.black)
                         .font(.system(size:30))
                         .background(RoundedRectangle(cornerRadius: 13)
-                                        .stroke()
+                                        .stroke(lineWidth: 4)
                                         .fill(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
                                         .frame(width: 226, height: 51)
                         )
