@@ -29,7 +29,6 @@ struct QuizIntroductionView: View {
                     Spacer()
                         .frame(height:43)
                     Button(action: {
-                        QuizMenuView()
                     }, label: {
                         Text("Start")
                             .font(.system(size:35))

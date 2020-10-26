@@ -21,7 +21,7 @@
 		D77A30B725432552005FD207 /* EmailModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A30B625432552005FD207 /* EmailModalView.swift */; };
 		D7B1C8B82543467C000556F5 /* QuizEndBruttaFiguraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B1C8B72543467C000556F5 /* QuizEndBruttaFiguraView.swift */; };
 		F08EBBDE2541B7FD004B3591 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBBDD2541B7FD004B3591 /* CommunityView.swift */; };
-		F08EBBE12541B821004B3591 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBBE02541B821004B3591 /* SavedView.swift */; };
+		F08EBBE12541B821004B3591 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBBE02541B821004B3591 /* FavoritesView.swift */; };
 		F08EBBE42541B83A004B3591 /* QuizMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBBE32541B83A004B3591 /* QuizMenuView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		D77A30B625432552005FD207 /* EmailModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModalView.swift; sourceTree = "<group>"; };
 		D7B1C8B72543467C000556F5 /* QuizEndBruttaFiguraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEndBruttaFiguraView.swift; sourceTree = "<group>"; };
 		F08EBBDD2541B7FD004B3591 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
-		F08EBBE02541B821004B3591 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		F08EBBE02541B821004B3591 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F08EBBE32541B83A004B3591 /* QuizMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 				F08EBBE32541B83A004B3591 /* QuizMenuView.swift */,
 				F08EBBDD2541B7FD004B3591 /* CommunityView.swift */,
 				D77A30B625432552005FD207 /* EmailModalView.swift */,
-				F08EBBE02541B821004B3591 /* SavedView.swift */,
+				F08EBBE02541B821004B3591 /* FavoritesView.swift */,
 				7B5A9B8F2546DD68008232D4 /* QuizIntroductionView.swift */,
 				7B4F7344254702B800A68557 /* QuizView.swift */,
 				7BE9309A25431FE000F34B27 /* QuizEndBellaFiguraView.swift */,
@@ -184,7 +184,7 @@
 			files = (
 				7BE9309B25431FE000F34B27 /* QuizEndBellaFiguraView.swift in Sources */,
 				C3315D362541D49D0044309B /* infoView.swift in Sources */,
-				F08EBBE12541B821004B3591 /* SavedView.swift in Sources */,
+				F08EBBE12541B821004B3591 /* FavoritesView.swift in Sources */,
 				F08EBBE42541B83A004B3591 /* QuizMenuView.swift in Sources */,
 				7B4F7345254702B800A68557 /* QuizView.swift in Sources */,
 				7B5A9B8D2546D6D3008232D4 /* QuizIntroductionModel.swift in Sources */,
