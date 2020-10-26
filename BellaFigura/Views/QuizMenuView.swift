@@ -1,43 +1,93 @@
-//
-//  QuizMenuView.swift
-//  BellaFigura
-//
-//  Created by Gabriele Borriello on 22/10/2020.
-//
 
 import SwiftUI
 
+
+
 struct QuizMenuView: View {
+    
     var body: some View {
         
-            VStack {
-            Image("businessMan")
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
-                    .stroke()
-                    .fill(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
-                    .padding()
-                    .overlay(Text("vabbè comunque lascia stare")
-                                .foregroundColor(Color.black))
-            
-            }
-            
-            .navigationBarTitle("Quiz Menu", displayMode: .inline)
-            .navigationBarItems(trailing:
-                Button(
-                    action: {/*Inserire funzione Spiegazioni*/},
+        NavigationView{
+            ScrollView{
+                NavigationLink(
+                    destination: Text("Destination"),
+                    //inserire view QuizIntroduction
                     label: {
-                        Image(
-                            systemName: "info.circle"
-                        ).accentColor(Color(#colorLiteral(red: 0.9215686275, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
+                        QuizTopic(imageQuizTopic: "universityMenu", nameQuizTopic: "University")
                     }
                 )
-            )
+                 
+                NavigationLink(
+                    destination: Text("Destination"),
+                    //inserire view QuizIntroduction
+                    label: {
+                        QuizTopic(imageQuizTopic: "dressCodeMenu", nameQuizTopic: "Dress Code")
+                    }
+                )
+                NavigationLink(
+                    destination: Text("Destination"),
+                    //inserire view QuizIntroduction
+                    label: {
+                        QuizTopic(imageQuizTopic: "covidMenu", nameQuizTopic: "COVID-19", doneQuizTopic: true)
+                    }
+                )
+                NavigationLink(
+                    destination: Text("Destination"),
+                    //inserire view QuizIntroduction
+                    label: {
+                        QuizTopic(imageQuizTopic: "tableMannersMenu", nameQuizTopic: "Table Manners")
+                    }
+                )
+            }
+            .navigationBarTitle("Quiz", displayMode: .inline)
+        }
+    }
+    
+    struct QuizMenuView_Previews: PreviewProvider {
+        
+        static var previews: some View {
+            
+            QuizMenuView()
+            
+        }
         
     }
+    
+    struct QuizTopic: View {
+        var imageQuizTopic : String
+        var nameQuizTopic : String
+        var doneQuizTopic : Bool = false
+        var body: some View {
+            
+            ZStack(alignment: .bottomTrailing)
+                {
+                Image(imageQuizTopic)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 13))
+                
+                    HStack{
+                        if doneQuizTopic==true{
+                        Image(systemName: "checkmark.circle.fill")
+                            .resizable()
+                            .frame(width: 25.0, height: 25.0)
+                            .foregroundColor(.white)
+                            .shadow(radius: 3, y:5)
+                        }
+                    Text(nameQuizTopic)
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .padding(5.0)
+                        .shadow(radius: 3, y:5)
+                }
+            }
+                .frame(height: 200.0)
+                .padding(.horizontal, 30.0)
+                .padding(.vertical, -15.0)
+        }
+        
+    }
+    
 }
 
-struct QuizMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        QuizMenuView()
-    }
-}
