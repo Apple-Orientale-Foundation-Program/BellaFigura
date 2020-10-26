@@ -15,8 +15,7 @@ struct QuizIntroductionView: View {
         NavigationView{
             ZStack {
                 Image(introElements.introImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all) 
                 VStack {
                     Text(introElements.introTitle)
                         .font(.system(size: 40))
@@ -29,7 +28,9 @@ struct QuizIntroductionView: View {
                         .multilineTextAlignment(.center)
                     Spacer()
                         .frame(height:43)
-                    Button(action: {}, label: {
+                    Button(action: {
+                        QuizMenuView()
+                    }, label: {
                         Text("Start")
                             .font(.system(size:35))
                             .padding()
@@ -52,12 +53,12 @@ struct QuizIntroductionView: View {
                                             }
                                         }
                 )
+                .statusBar(hidden: true)
             }
-            .statusBar(hidden: true)
         }
     }
 }
 struct QuizIntroductionView_Previews: PreviewProvider {
-    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[1])
+    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[0])
     }
 }

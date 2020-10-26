@@ -6,8 +6,7 @@ import SwiftUI
 struct QuizMenuView: View {
     
     var body: some View {
-        
-        NavigationView{
+        NavigationView {
             ScrollView{
                 NavigationLink(
                     destination: Text("Destination"),
@@ -88,6 +87,4 @@ struct QuizMenuView: View {
         }
         
     }
-    
 }
-

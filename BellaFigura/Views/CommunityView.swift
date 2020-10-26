@@ -47,7 +47,6 @@ We will add your experience to our collection!
         }
     }
 }
-
 struct CommunityView_Previews: PreviewProvider {
     static var previews: some View {
         CommunityView()

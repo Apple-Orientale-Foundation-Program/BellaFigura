@@ -30,9 +30,10 @@ struct ContentView: View {
             }
             
         }.accentColor(Color(#colorLiteral(red: 0.9215686275, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
+        .navigationBarHidden(true)
+        
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
