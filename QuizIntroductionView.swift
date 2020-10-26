@@ -56,6 +56,6 @@ struct QuizIntroductionView: View {
     }
 }
 struct QuizIntroductionView_Previews: PreviewProvider {
-    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[0])
+    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[2])
     }
 }
