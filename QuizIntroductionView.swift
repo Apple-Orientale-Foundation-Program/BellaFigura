@@ -15,6 +15,8 @@ struct QuizIntroductionView: View {
         NavigationView{
         ZStack {
             Image(introElements.introImage)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
             VStack {
                 Text(introElements.introTitle)
                     .font(.system(size: 40))
@@ -56,6 +58,6 @@ struct QuizIntroductionView: View {
     }
 }
 struct QuizIntroductionView_Previews: PreviewProvider {
-    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[2])
+    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[1])
     }
 }

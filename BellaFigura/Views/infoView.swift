@@ -20,7 +20,7 @@ struct infoView: View {
             VStack {
                 
                 //IMAGE
-                Image("QM")
+                Image("questionMark")
                     .padding(.top, -150)
                 
                 
