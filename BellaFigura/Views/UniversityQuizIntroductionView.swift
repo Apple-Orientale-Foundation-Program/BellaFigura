@@ -22,7 +22,7 @@ struct UniversityQuizIntroductionView_Previews: PreviewProvider {
 }
 
 struct ExtractedView: View {
-    var  immagineBack = "UniversityBack"
+    var  immagineBack = "universityBackground"
     var  textTitle = "University"
     var  title2 = "Choose the best option considering the social context, the hour of the day and the occasion"
     

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Group 8.png",
+      "filename" : "Quiz Introduction Background.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Quiz Introduction Background@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Quiz Introduction Background@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -11,7 +11,7 @@ struct QuizEndBruttaFiguraView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Image("Thumbs up")
+                Image("thumbsDown")
                 VStack{
                     Text("You made a bad impression")
                         .fontWeight(.semibold)
