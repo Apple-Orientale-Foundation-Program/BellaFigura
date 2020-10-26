@@ -16,8 +16,6 @@ struct CommunityView: View {
                 Image("communityBackground")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                //                        .scaledToFill()
-                //                        .edgesIgnoringSafeArea(.all)
                 VStack{
                     Text("""
 Have you ever found yourself in an awkward situation and you didn’t know what to do or how to behave? Write us an e-mail and let us know!

@@ -30,6 +30,7 @@ struct ExtractedView: View {
     var body: some View {
         ZStack{
             Image("UniversityBack")
+                .aspectRatio(contentMode: .fill)
             
             VStack {
                 Text("University")

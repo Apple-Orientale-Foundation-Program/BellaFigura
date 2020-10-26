@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35EBF61B2543023500170745 /* QuizIntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EBF61A2543023500170745 /* QuizIntroductionView.swift */; };
 		7BE83BF1254038A500258F50 /* BellaFiguraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE83BF0254038A500258F50 /* BellaFiguraApp.swift */; };
 		7BE83BF3254038A500258F50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE83BF2254038A500258F50 /* ContentView.swift */; };
 		7BE83BF5254038A600258F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE83BF4254038A600258F50 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35EBF61A2543023500170745 /* QuizIntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizIntroductionView.swift; sourceTree = "<group>"; };
 		7BE83BED254038A500258F50 /* BellaFigura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellaFigura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE83BF0254038A500258F50 /* BellaFiguraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellaFiguraApp.swift; sourceTree = "<group>"; };
 		7BE83BF2254038A500258F50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				F08EBBE72541B872004B3591 /* Views */,
 				7BE83BF0254038A500258F50 /* BellaFiguraApp.swift */,
 				7BE83BF2254038A500258F50 /* ContentView.swift */,
-				35EBF61A2543023500170745 /* QuizIntroductionView.swift */,
 				D75D68D62546CB81004437C1 /* UniversityQuizIntroductionView.swift */,
 				D75D68DA2546D002004437C1 /* QuizIntroView.swift */,
 				7BE83BF4254038A600258F50 /* Assets.xcassets */,
@@ -185,7 +182,6 @@
 				7BE83BF3254038A500258F50 /* ContentView.swift in Sources */,
 				7BE83BF1254038A500258F50 /* BellaFiguraApp.swift in Sources */,
 				F08EBBDE2541B7FD004B3591 /* CommunityView.swift in Sources */,
-				35EBF61B2543023500170745 /* QuizIntroductionView.swift in Sources */,
 				D77A30B725432552005FD207 /* EmailModalView.swift in Sources */,
 				D7B1C8B82543467C000556F5 /* QuizEndBruttaFiguraView.swift in Sources */,
 			);
