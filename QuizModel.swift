@@ -1,29 +1,19 @@
-////
-////  QuizModel.swift
-////  BellaFigura
-////
-////  Created by Stefania Caiazza on 26/10/2020.
-////
 //
-//import Foundation
-//struct Quiz: Identifiable {
-//    var id = UUID ()
-//    var quizImage: String
-//    var quizQuestion: String
-//    var quizAnswer1: String
-//    var quizAnswer2: String
-//    var quizAnswer3: String
-//}
+//  QuizModel.swift
+//  BellaFigura
 //
-//class Quizzes: ObservableObject {
-//    @Published var listOfQuizElements: [Quiz]
-//    
-//    init(listOfQuizElements: [Quiz]) {
-//        self.listOfQuizElements = listOfQuizElements
-//    }
-//}
+//  Created by Stefania Caiazza on 26/10/2020.
 //
-//let QuizElements = Quizzes (
-//    listOfQuizElements:[
-//    Quiz(quizImage: <#T##String#>, quizQuestion: <#T##String#>, quizAnswer1: <#T##String#>, quizAnswer2: <#T##String#>, quizAnswer3: <#T##String#>)
-//    ])
+
+import Foundation
+struct Quiz: Identifiable {
+    var id: Int
+    var quizImage: String
+    var quizQuestion: String
+    var quizAnswers: [String]
+    var correctAnswerIndex: Int
+}
+//
+//var quiz1 = Quiz(id:1, quizImage: "questionMark", quizQuestion: "what do you wear in class", quizAnswers: ["pijama", "wedding dress","jeans"], correctAnswerIndex: quizAnswers[correctAnswerIndex])
+//var quiz2 = Quiz(id:2, quizImage: "thumbsUp", quizQuestion: "Bar?", quizAnswers:["1", "2", "3", "4"])
+//

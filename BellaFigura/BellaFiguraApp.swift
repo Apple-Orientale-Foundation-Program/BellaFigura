@@ -11,13 +11,13 @@ import SwiftUI
 struct BellaFiguraApp: App {
     var body: some Scene {
         WindowGroup {
-            infoView()
+            ContentView()
         }
     }
 }
 
 struct BellaFiguraApp_Previews: PreviewProvider {
     static var previews: some View {
-        infoView()
+        ContentView()
     }
 }

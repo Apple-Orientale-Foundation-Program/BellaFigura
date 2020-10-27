@@ -17,7 +17,7 @@ import SwiftUI
                 // 2.
                 if self.isActive {
                     // 3.
-                    infoView()
+                    InfoView()
                 } else {
                     // 4.
                     Image("logo")
