@@ -9,11 +9,13 @@ import SwiftUI
 
 struct InfoView: View {
     
-    @State var isChecked:Bool = false
+    //@State var isChecked:Bool = false
     @State var isVisible: Bool = true
+    @State var isChecked2 = false    //Booleano d'appoggio per UsereDefault, il problema era che, essendo isChecked di tipo @State, nel momento stesso in cui togglava, veniva refreshata l'intera schermata. In questo modo togglo isCkecked2 ma refresho la view con isChecked
+    @State private var isChecked = UserDefaults.standard.bool(forKey: "Checked")
     
     func toggle()
-    {isChecked = !isChecked}
+    {isChecked2 = !isChecked2}
     
     var body: some View {
         
@@ -53,7 +55,7 @@ struct InfoView: View {
                 //checkbox
                 Button(action: toggle){
                     HStack{
-                        Image(systemName: isChecked ? "checkmark.square": "square")
+                        Image(systemName: isChecked2 ? "checkmark.square": "square")
                         Text("Don't show again")
                             .accentColor(.black)
                         
@@ -64,6 +66,8 @@ struct InfoView: View {
                 
                 Button(action: {
                     isVisible = false
+                    UserDefaults.standard.set(isChecked2, forKey: "Checked")
+
                 }, label: {
                     Text("Start")
                         .font(.system(size: 24))
@@ -73,7 +77,7 @@ struct InfoView: View {
                                         .frame(width: 165, height: 50))
                 })
             } .padding(.all)
-        }.opacity(isVisible ? 1 : 0)
+        }.opacity(isChecked ? 0 : (isVisible ? 1 : 0))
     }
     }
 
