@@ -12,8 +12,8 @@ struct QuizEndView: View {
     @EnvironmentObject var QuizEndFigura:
         QuizIntroduction
     
-    @State var isPressed: Bool = false
-        
+    @State var isPressedMenu: Bool = false
+    @State var isPressedTryAgain: Bool = false
     var body: some View {
         
         VStack{
@@ -37,14 +37,14 @@ struct QuizEndView: View {
             Spacer()
                 .frame(height: 98)
             
-            Button(action: {isPressed = true}, label: {
+            Button(action: {isPressedMenu = true}, label: {
                 Text("Quiz Menu")
-                    .foregroundColor(isPressed ? Color.white : .black)
+                    .foregroundColor(isPressedMenu ? Color.white : .black)
                     .font(.system(size:30))
                     .background(RoundedRectangle(cornerRadius: 13)
                                     .strokeBorder(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)), lineWidth: 4)
                                     .frame(width: 226, height: 51)
-                                    .background(isPressed ? Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)) : Color.white )
+                                    .background(isPressedMenu ? Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)) : Color.white )
                                     .cornerRadius(13)
                                     
                     )
@@ -53,14 +53,14 @@ struct QuizEndView: View {
             Spacer()
                 .frame(height: 36)
             
-            Button(action: {isPressed = true}, label: {
+            Button(action: {isPressedTryAgain = true}, label: {
                 Text("Try Again")
-                    .foregroundColor(isPressed ? Color.white : .black)
+                    .foregroundColor(isPressedTryAgain ? Color.white : .black)
                     .font(.system(size:30))
                     .background(RoundedRectangle(cornerRadius: 13)
                                     .strokeBorder(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)), lineWidth: 4)
                                     .frame(width: 226, height: 51)
-                                    .background(isPressed ? Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)) : Color.white )
+                                    .background(isPressedTryAgain ? Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)) : Color.white )
                                     .cornerRadius(13)
                 )
             })
