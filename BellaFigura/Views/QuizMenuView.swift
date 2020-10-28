@@ -6,11 +6,10 @@ import SwiftUI
 struct QuizMenuView: View {
     
     var body: some View {
-        
-        NavigationView{
+        NavigationView {
             ScrollView{
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination:QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[1]),
                     //inserire view QuizIntroduction
                     label: {
                         QuizTopic(imageQuizTopic: "universityMenu", nameQuizTopic: "University")
@@ -18,14 +17,14 @@ struct QuizMenuView: View {
                 )
                  
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination:QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[0]),
                     //inserire view QuizIntroduction
                     label: {
                         QuizTopic(imageQuizTopic: "dressCodeMenu", nameQuizTopic: "Dress Code")
                     }
                 )
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination:QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[2]),
                     //inserire view QuizIntroduction
                     label: {
                         QuizTopic(imageQuizTopic: "covidMenu", nameQuizTopic: "COVID-19", doneQuizTopic: true)
@@ -88,6 +87,4 @@ struct QuizMenuView: View {
         }
         
     }
-    
 }
-

@@ -12,11 +12,9 @@ struct QuizIntroductionView: View {
     @EnvironmentObject var quizIntroduction: QuizIntroduction
     
     var body: some View {
-        NavigationView{
         ZStack {
             Image(introElements.introImage)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
             VStack {
                 Text(introElements.introTitle)
                     .font(.system(size: 40))
@@ -29,7 +27,8 @@ struct QuizIntroductionView: View {
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height:43)
-                Button(action: {}, label: {
+                Button(action: {
+                }, label: {
                     Text("Start")
                         .font(.system(size:35))
                         .padding()
@@ -41,23 +40,11 @@ struct QuizIntroductionView: View {
                 }
                 )
             } .offset(x: 0, y: 80)
-            .navigationBarItems(leading:
-                                    Button(action: {
-                                    }) {
-                                        HStack {
-                                            Image(systemName: "chevron.backward")
-                                                .accentColor(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
-                                            Text("Back")
-                                                .accentColor(Color(#colorLiteral(red: 0.9294117647, green: 0.431372549, blue: 0.3411764706, alpha: 1)))
-                    }
-                }
-            )
+            .statusBar(hidden: true)
         }
-        
-    }
     }
 }
 struct QuizIntroductionView_Previews: PreviewProvider {
-    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[1])
+    static var previews: some View { QuizIntroductionView(introElements: QuizIntro.listOfQuizIntroElements[0])
     }
 }

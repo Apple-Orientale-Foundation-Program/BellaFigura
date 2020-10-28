@@ -24,9 +24,9 @@ class QuizIntroduction: ObservableObject {
 
 let QuizIntro = QuizIntroduction(
     listOfQuizIntroElements: [
-        QuizIntroElements(introImage: "dressCodeBackground", introText: "Choose the best option  considering the social context, the hour of the day and the occasion", introTitle: "Dress Code"),
-        QuizIntroElements(introImage: "universityBackground", introText: "Choose the best option  considering the social context, the hour of the day and the occasion", introTitle: "University"),
-        QuizIntroElements(introImage: "covidBackground", introText: "Choose the best option  considering the social context, the hour of the day and the occasion", introTitle: "Covid-19")
+        QuizIntroElements(introImage: "dressCodeBackground", introText: "Choose the best option considering the social context, the hour of the day and the occasion", introTitle: "Dress Code"),
+        QuizIntroElements(introImage: "universityBackground", introText: "Choose the best option considering the social context, the hour of the day and the occasion", introTitle: "University"),
+        QuizIntroElements(introImage: "covidBackground", introText: "Choose the best option considering the social context, the hour of the day and the occasion", introTitle: "Covid-19")
         
 ]
 )

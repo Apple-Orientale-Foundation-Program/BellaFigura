@@ -7,14 +7,13 @@
 
 import Foundation
 struct Quiz: Identifiable {
-    var id = UUID ()
+    var id: Int
     var quizImage: String
     var quizQuestion: String
-    var quizAnswer1: String
-    var quizAnswer2: String
-    var quizAnswer3: String
+    var quizAnswers: [String]
+    var correctAnswerIndex: Int
 }
-
-class Quizzes: ObservableObject {
-    
-}
+//
+//var quiz1 = Quiz(id:1, quizImage: "questionMark", quizQuestion: "what do you wear in class", quizAnswers: ["pijama", "wedding dress","jeans"], correctAnswerIndex: quizAnswers[correctAnswerIndex])
+//var quiz2 = Quiz(id:2, quizImage: "thumbsUp", quizQuestion: "Bar?", quizAnswers:["1", "2", "3", "4"])
+//

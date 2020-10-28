@@ -8,7 +8,6 @@
 import SwiftUI
 
     struct SplashView: View {
-        
         // 1.
         @State var isActive:Bool = false
         
@@ -17,7 +16,7 @@ import SwiftUI
                 // 2.
                 if self.isActive {
                     // 3.
-                    infoView()
+                    InfoView()
                 } else {
                     // 4.
                     Image("logo")
@@ -34,8 +33,7 @@ import SwiftUI
                 }
             }
         }
-        
-    }
+        }
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
         SplashView()
